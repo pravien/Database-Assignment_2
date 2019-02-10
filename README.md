@@ -25,14 +25,20 @@ import re I think this is a part of the standard lib.
 
 2. cd to the project folder.(!important)
 
-3. Run the following command in the terminal :
+3. Inside the project folder create a folder called 'data':
+
+```
+mkdir data
+```
+
+4. Run the following command in the terminal :
 
 ```
 docker run --rm -v $(pwd)/data:/data/db --publish=27017:27017 --name dbms -d mongo
 ```
 This code will start a mongodb.
 
-4. Run the python file main.py with the following command.
+5. Run the python file main.py with the following command.
 
 
 ```
@@ -40,7 +46,7 @@ python main.py
 
 ```
 
-5. This will out put the following output
+6. This will out put the following output
 
 ```
 How many Twitter users are in the database?
