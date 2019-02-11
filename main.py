@@ -79,7 +79,7 @@ def q3():
             if user in temp_dict:
                 temp_dict[user]+=1
             else:
-                temp_dict[user]=0
+                temp_dict[user]=1
     s = [(k, temp_dict[k]) for k in sorted(temp_dict, key=temp_dict.get,
      reverse=True)]
     for i in range(0,5):
